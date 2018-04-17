@@ -509,6 +509,9 @@ def _check_credentials():
             print '\nCtrl-c pressed. Later, skater!'
             exit()
 
+@task
+def check_cred():
+    _check_credentials()
 
 @task
 def open_spreadsheet(slug):

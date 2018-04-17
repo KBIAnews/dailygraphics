@@ -21,7 +21,7 @@ ASSETS_SLUG = PROJECT_SLUG
 
 # The name of the repository containing the source
 REPOSITORY_NAME = 'dailygraphics'
-REPOSITORY_URL = 'git@github.com:nprapps/%s.git' % REPOSITORY_NAME
+REPOSITORY_URL = 'git@github.com:kbianews/%s.git' % REPOSITORY_NAME
 REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
 
 # Path to the folder containing the graphics
@@ -46,14 +46,14 @@ PYM = {
 CAREBOT
 """
 
-CAREBOT_ENABLED = True
+CAREBOT_ENABLED = False
 CAREBOT_URL = 'https://carebot.nprapps.org/carebot-tracker.v0.min.js'
 
 """
 OAUTH
 """
 
-GOOGLE_OAUTH_CREDENTIALS_PATH = '~/.google_oauth_credentials'
+GOOGLE_OAUTH_CREDENTIALS_PATH = '~/.google_oauth_credentials_dailyg'
 
 authomatic_config = {
     'google': {
@@ -72,17 +72,17 @@ authomatic = Authomatic(authomatic_config, os.environ.get('AUTHOMATIC_SALT'))
 DEPLOYMENT
 """
 PRODUCTION_S3_BUCKET = {
-    'bucket_name': 'apps.npr.org',
+    'bucket_name': 'apps.kbia.org',
     'region': 'us-east-1'
 }
 
 STAGING_S3_BUCKET = {
-    'bucket_name': 'stage-apps.npr.org',
+    'bucket_name': 'stage-apps.kbia.org',
     'region': 'us-east-1'
 }
 
 ASSETS_S3_BUCKET = {
-    'bucket_name': 'assets.apps.npr.org',
+    'bucket_name': 'assets.apps.kbia.org',
     'region': 'us-east-1'
 }
 
@@ -94,7 +94,7 @@ ANALYTICS
 """
 
 GOOGLE_ANALYTICS = {
-    'ACCOUNT_ID': 'UA-5828686-75'
+    'ACCOUNT_ID': 'UA-24704798-13'
 }
 
 """

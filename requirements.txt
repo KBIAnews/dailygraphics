@@ -12,7 +12,7 @@ docutils==0.11
 gunicorn==19.1.1
 nose==1.2.1
 odict==1.5.1
-openpyxl==2.0.3
+openpyxl==2.5.2
 ply==3.4
 pycrypto==2.6
 requests==1.1.0
