@@ -197,7 +197,7 @@
 
                   {% if DEPLOYMENT_TARGET != 'production' %}
                   <div class="segment">
-                      <a class="btn production" href="https://{{ PRODUCTION_S3_BUCKET['bucket_name'] }}/{{ PROJECT_SLUG }}/graphics/{{ slug }}/" target="_blank">production &raquo;</a>
+                      <a class="btn production" href="http://{{ PRODUCTION_S3_BUCKET['bucket_name'] }}/{{ PROJECT_SLUG }}/graphics/{{ slug }}/" target="_blank">production &raquo;</a>
                   </div>
                   {% endif %}
 
@@ -229,7 +229,7 @@
 
 <!-- textarea contents -->
     <textarea id="embed-code" readonly="readonly" rows="10" cols="80">
-<p data-pym-loader data-child-src="https://{{ PRODUCTION_S3_BUCKET['bucket_name'] }}/{{ PROJECT_SLUG }}/graphics/{{ slug }}/child.html" id="responsive-embed-{{ slug }}">Loading...</p><script type="text/javascript" src="{{PYM['pym_loader_url']}}"></script></textarea>
+<p data-pym-loader data-child-src="http://{{ PRODUCTION_S3_BUCKET['bucket_name'] }}/{{ PROJECT_SLUG }}/graphics/{{ slug }}/child.html" id="responsive-embed-{{ slug }}">Loading...</p><script type="text/javascript" src="{{PYM['pym_loader_url']}}"></script></textarea>
 <!-- end textarea contents -->
 
     </div>
