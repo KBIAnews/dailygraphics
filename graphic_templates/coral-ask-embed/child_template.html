@@ -16,9 +16,15 @@
     </div>
     {% endif %}
 
-    <div class="footer">
+<!--     <div class="footer">
         {% if COPY.labels.source %}<p>Source: {{ COPY.labels.source|smarty }}</p>{% endif %}
         {% if COPY.labels.credit %}<p>Credit: {{ COPY.labels.credit|smarty }}</p>{% endif %}
+    </div> -->
+
+    <div class="footer coral-credit" style="text-align: right;">
+        <a href="https://coralproject.net/products/ask">
+        <img src="img/coral-wide.png" style="max-height:30px;padding:10px 40px;display:inline-block;">
+        </a>
     </div>
 
 {% endblock content %}

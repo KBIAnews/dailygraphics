@@ -457,6 +457,13 @@ def add_dot_chart(slug):
     _add_graphic(slug, 'dot_chart')
 
 @task
+def add_coral_ask(slug):
+    """
+    Create a dot chart with error bars
+    """
+    _add_graphic(slug, 'coral-ask-embed')
+
+@task
 def add_slopegraph(slug):
     """
     Create a slopegraph (intended for narrow display)
