@@ -491,6 +491,13 @@ def add_issue_matrix(slug):
     """
     _add_graphic(slug, 'issue_matrix')
 
+@task
+def add_youtube_embed(slug):
+    """
+    Create a YouTube embed
+    """
+    _add_graphic(slug, 'youtube_embed')
+
 def _check_credentials():
     """
     Check credentials and spawn server and browser if not
