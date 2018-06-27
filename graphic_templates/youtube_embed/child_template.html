@@ -1,0 +1,39 @@
+{% extends 'base_template.html' %}
+
+{% block content %}
+
+    <script type="text/javascript" src="js/plyr.polyfilled.js"></script>
+
+    {% if COPY.labels.headline %}<h1>{{ COPY.labels.headline|smarty }}</h1>{% endif %}
+    {% if COPY.labels.subhed %}<h2>{{ render(COPY.labels.subhed)|smarty }}</h2>{% endif %}
+
+    <div id="graphic" class="graphic">
+        {% if COPY.labels.youtube_id %}
+        <div id="player" data-youtube-id="{{ COPY.labels.youtube_id }}">
+                <iframe src="https://www.youtube.com/embed/{{ COPY.labels.youtube_id }}?&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency frameborder="0" style="border:none;"></iframe>
+
+        </div>
+        {% endif %}
+
+        <!-- {% if COPY.labels.embedcode %}{{ render(COPY.labels.embedcode)|smarty }}{% endif %} -->
+    </div>
+
+    {% if COPY.labels.footnote %}
+    <div class="footnotes">
+        <h4>Notes</h4>
+        <p>{{ COPY.labels.footnote|smarty }}</p>
+    </div>
+    {% endif %}
+
+
+    <script type="text/javascript">
+        
+    </script>
+
+<div class="footer">
+        {% if COPY.labels.source %}<p>Source: {{ COPY.labels.source|smarty }}</p>{% endif %}
+        {% if COPY.labels.credit %}<p>Credit: {{ COPY.labels.credit|smarty }}</p>{% endif %}
+    </div>
+
+
+{% endblock content %}
