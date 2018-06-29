@@ -464,6 +464,13 @@ def add_coral_ask(slug):
     _add_graphic(slug, 'coral-ask-embed')
 
 @task
+def add_responsive_slideshow(slug):
+    """
+    Create a Javascript-based responsive slideshow
+    """
+    _add_graphic(slug, 'responsive_slideshow')
+
+@task
 def add_slopegraph(slug):
     """
     Create a slopegraph (intended for narrow display)
